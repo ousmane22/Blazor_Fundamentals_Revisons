@@ -8,5 +8,8 @@ namespace ShopHRM.Components
     {
         [Parameter]
         public Employee  Employee { get; set; } = new Employee();
+
+        [Parameter]
+        public EventCallback<Employee> EmployeeQuickViewClicked { get; set; }
     }
 }
